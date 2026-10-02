@@ -1,3 +1,5 @@
+**OUTPUT OF CODE 2**
+
 **#Case 1**
 Enter a valid infix expression.
 Allowed operators: +, -, *, /
