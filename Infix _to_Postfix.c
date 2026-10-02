@@ -41,17 +41,18 @@ int isOperator(char x)
 {
     return (x == '+' || x == '-' || x == '*' || x == '/');
 }
-void infixToPostfix(char infix[], char postfix[])
+int infixToPostfix(char infix[], char postfix[])
 {
     int i = 0, j = 0;
     char symbol;
+    top = -1;
     while (infix[i] != '\0')
     {
         symbol = infix[i];
         if (!isalnum(symbol) && symbol != '(' && symbol != ')' && !isOperator(symbol))
         {
             printf("Invalid expression!\n");
-            return;
+            return 0;
         }
         else if (isalnum(symbol))
         {
@@ -72,7 +73,7 @@ void infixToPostfix(char infix[], char postfix[])
             if (top == -1)
             {
                 printf("Invalid expression!\n");
-                return;
+                return 0;
             }
             pop();
         }
@@ -92,12 +93,13 @@ void infixToPostfix(char infix[], char postfix[])
         if (stack[top] == '(')
         {
             printf("Invalid expression!\n");
-            return;
+            return 0;
         }
         postfix[j] = pop();
         j++;
     }
     postfix[j] = '\0';
+    return 1;
 }
 int main()
 {
@@ -105,8 +107,8 @@ int main()
     printf("Enter a valid infix expression.\n");
     printf("Allowed operators: +, -, *, /\n");
     printf("Enter expression: ");
-    scanf("%s", infix);
-    infixToPostfix(infix, postfix);
-    printf("Postfix expression: %s\n", postfix);
+    scanf("%99s", infix);
+    if (infixToPostfix(infix, postfix))
+        printf("Postfix expression: %s\n", postfix);
     return 0;
 }
