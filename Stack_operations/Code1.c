@@ -24,7 +24,7 @@ void pop()
         printf("Stack Underflow");
         return;
     }
-    printf("%d is poped from the stack.",stack[top]);
+    printf("%d is popped from the stack.",stack[top]);
     top=top-1;
     return;
 }
