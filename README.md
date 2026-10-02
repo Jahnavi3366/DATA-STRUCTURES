@@ -47,3 +47,19 @@ Exiting Program...
 
 Process returned 0 (0x0)   execution time : 29.368 s
 Press any key to continue.
+
+<!---LeetCode Topics Start-->
+# LeetCode Topics
+## Two Pointers
+|  |
+| ------- |
+| [2000-reverse-prefix-of-word](https://github.com/Jahnavi3366/DATA-STRUCTURES/tree/master/2000-reverse-prefix-of-word) |
+## String
+|  |
+| ------- |
+| [2000-reverse-prefix-of-word](https://github.com/Jahnavi3366/DATA-STRUCTURES/tree/master/2000-reverse-prefix-of-word) |
+## Stack
+|  |
+| ------- |
+| [2000-reverse-prefix-of-word](https://github.com/Jahnavi3366/DATA-STRUCTURES/tree/master/2000-reverse-prefix-of-word) |
+<!---LeetCode Topics End-->
